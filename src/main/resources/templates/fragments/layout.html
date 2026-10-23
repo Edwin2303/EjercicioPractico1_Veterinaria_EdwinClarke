@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<header th:fragment="header" class="bg-success text-white p-3"><div class="container"><h1 th:text="#{header.titulo}">Clínica Veterinaria</h1></div></header>
+<nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark"><div class="container">
+<a class="navbar-brand" th:href="@{/}" th:text="#{nav.inicio}">Inicio</a>
+<div class="navbar-nav">
+<a class="nav-link" th:href="@{/tipos}" th:text="#{nav.tipos}">Tipos</a>
+<a class="nav-link" th:href="@{/servicios}" th:text="#{nav.servicios}">Servicios</a>
+<a class="nav-link" th:href="@{/citas}" th:text="#{nav.citas}">Citas</a>
+<a class="nav-link" th:href="@{/#contacto}" th:text="#{nav.contacto}">Consultas</a>
+</div></div></nav>
+<footer th:fragment="footer" class="bg-dark text-white text-center p-3 mt-5"><span th:text="#{footer.texto}">Clínica veterinaria</span></footer>
+</body></html>
